@@ -73,6 +73,7 @@ accionCopiar.onclick = function () {
     //creamos una variable donde guardar el texto
     var copiarEncriptado = document.getElementById("desencriparea").value
     navigator.clipboard.writeText(copiarEncriptado);
-
+    //Se copia el texto al primer textarea y se elimina el texto del segundo
+    document.getElementById("encriparea").value = copiarEncriptado
     document.getElementById("desencriparea").value = "";
 }
