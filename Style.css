@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    font-family: 'Chivo Mono', monospace;
+    background-color: aliceblue;
+}
+
+/* Fondo de los Textarea */
+.color-buenardo{
+    min-height: 70vh;
+    min-width: 10vh;
+    background: #69ccba;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8b93b9, #61bfae);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9098bc, #61c3b1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* Contenedor de los text Area */
+.encript-dis{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column-gap: 50px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* Maquetacion de los text area */
+.area-encrip{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #8b93b971;
+    margin-top: 5vh;
+}
+.area-desencrip{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 5vh;
+}
+button{
+    display: grid;
+    grid-row: 2/3;
+    width: 7rem;
+    height: 4rem;
+}
+::placeholder{
+    color: rgba(240, 248, 255, 0.501);
+    text-transform: none;
+    padding: 20px;
+}
+textarea{
+    width: 90vw;
+    min-height: 2vh;
+    height: 50vh;
+    box-sizing: border-box;
+    border-radius: 2.3%;
+    border: none;
+    resize: none;
+    outline: none;
+    color: aliceblue;
+    font-weight: lighter;
+    font-size: 2em;
+    margin: auto;
+    max-width: max-content;
+    text-transform: lowercase;
+    padding: 20px;
+    padding-top: 50px;
+    min-width: 420px;
+    box-shadow: 1px 0px 33px -4px rgba(92,88,88,0.75);
+-webkit-box-shadow: 1px 0px 33px -4px rgba(92,88,88,0.75);
+-moz-box-shadow: 1px 0px 33px -4px rgba(92,88,88,0.75);
+}
+/* Estilo de los textos */
+.texto-estilo{
+    display: flex;
+    min-height: 4em;
+    justify-content: center;
+    align-items: center;
+    text-size-adjust: 100%;
+    /* text-align: center; */
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 0px 33px -4px rgba(92,88,88,0.75);
+-webkit-text-shadow: 1px 0px 33px -4px rgba(92,88,88,0.75);
+-moz-text-shadow: 1px 0px 33px -4px rgba(92,88,88,0.75);
+}
+
+/* Estilo de los botones */
+.contenedor-botones{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.estilo-boton{
+    border: 1px solid rgba(208, 208, 208, 0.291);
+    box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.75);
+-webkit-box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.201);
+-moz-box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.17);
+    border-radius: 5%;
+    width: 15vw;
+    align-items: center;
+    margin-bottom: 50px;
+    color: aliceblue;
+    font-family: 'Chivo Mono', monospace;
+    font-weight: bolder;
+    font-size:  1.5vw;
+}
+
+.estilo-boton:hover{
+    border: 3px solid aliceblue;
+}
+
+#encriptar{
+    background-color: inherit;
+}
+#desencriptar{
+    background-color: inherit;
+}
+#copiarele{
+    background-color: inherit;
+}
+
